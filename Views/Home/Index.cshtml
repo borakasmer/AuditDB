@@ -1,0 +1,37 @@
+﻿@model List<Product>
+<div class="container">
+    <div class="jumbotron">
+        <h3>Borsoft & Warehouse</h3>
+    </div>
+    <hr>
+    <a href="/Home/Detail"><input type="button" value="Yeni Kayıt Gir" class="btn btn-success"></a>
+    <table class="table">
+        <thead>
+            <th></th>
+            <th>ID</th>
+            <th>Ad</th>
+            <th>Seri No</th>
+            <th>Toplam Adet</th>
+            <th>Fiyat</th>
+            <th>Depo Adresi</th>
+        </thead>
+        <tbody>
+            @foreach(var product in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="/Home/Detail/@product.ID"><input type="button" value="Detay" class="btn btn-danger"></a>
+                    </td>
+                    <td>
+                        @product.ID
+                    </td>
+                    <td>@product.Name</td>
+                    <td>@product.SerieNo</td>
+                    <td>@product.TotalCount</td>
+                    <td>@product.Price</td>
+                    <td>@product.WarehouseAddress</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

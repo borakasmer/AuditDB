@@ -1,0 +1,10 @@
+/Users/borakasmer/Projects/auditDB/bin/Debug/netcoreapp2.0/auditDB.deps.json
+/Users/borakasmer/Projects/auditDB/bin/Debug/netcoreapp2.0/auditDB.runtimeconfig.json
+/Users/borakasmer/Projects/auditDB/bin/Debug/netcoreapp2.0/auditDB.runtimeconfig.dev.json
+/Users/borakasmer/Projects/auditDB/bin/Debug/netcoreapp2.0/auditDB.dll
+/Users/borakasmer/Projects/auditDB/bin/Debug/netcoreapp2.0/auditDB.pdb
+/Users/borakasmer/Projects/auditDB/obj/Debug/netcoreapp2.0/auditDB.csproj.CoreCompileInputs.cache
+/Users/borakasmer/Projects/auditDB/obj/Debug/netcoreapp2.0/auditDB.AssemblyInfoInputs.cache
+/Users/borakasmer/Projects/auditDB/obj/Debug/netcoreapp2.0/auditDB.AssemblyInfo.cs
+/Users/borakasmer/Projects/auditDB/obj/Debug/netcoreapp2.0/auditDB.dll
+/Users/borakasmer/Projects/auditDB/obj/Debug/netcoreapp2.0/auditDB.pdb

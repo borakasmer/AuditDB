@@ -1,0 +1,65 @@
+@model Product
+<div class="container">
+    <div class="jumbotron">
+        <h3>Borsoft Warehouse Admin</h3>
+    </div>
+    <hr>
+    @using(Html.BeginForm("Update","Home",FormMethod.Post))
+    {  
+        string btnText = "";
+        btnText=Model.ID > 0 ? "Güncelle" : "Kaydet";
+        <table class="table">
+            <tr>
+                <td>
+                    Ad:
+                </td>
+                <td>
+                    <input type="text" value="@Model.Name" id="Name" name="Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Seri No:
+                </td>
+                <td>
+                    <input type="text" value="@Model.SerieNo" id="SerieNo" name="SerieNo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Toplam Sayı:
+                </td>
+                <td>
+                    <input type="text" value="@Model.TotalCount" id="TotalCount" name="TotalCount">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fiyat:
+                </td>
+                <td>
+                    <input type="text" value="@Model.Price" id="Price" name="Price">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Depo Adres:
+                </td>
+                <td>
+
+                    <textarea cols="30" rows="5" id="WarehouseAddress" name="WarehouseAddress">@Model.WarehouseAddress</textarea>
+                    <input type="submit" value=@btnText class="btn btn-warning">
+                   <!--  @if(Model.ID>0)
+                    { 
+                        <input type="submit" value="Güncelle" class="btn btn-warning">
+                    }
+                    else
+                    {
+                         <input type="submit" value="Kaydet" class="btn btn-warning">
+                    }
+                    -->               
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" id="ID" name="ID" value="@Model.ID">
+    }
